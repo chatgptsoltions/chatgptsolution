@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>8000+ ChatGPT Prompt Bundle - Instant Download</title>
+  <link rel="preconnect" href="https://checkout.razorpay.com"/>
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --accent: #e53935;
+      --card: #111;
+      --radius: 8px;
+      --gap: 1.5rem;
+      --badge-bg: #222;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+      background: var(--bg); 
+      color: var(--fg); 
+      line-height: 1.5; 
+      overflow-x: hidden; 
+      padding-bottom: 100px; 
+    }
+    .container { 
+      max-width: 700px; 
+      margin: 0 auto; 
+      padding: 1rem; 
+    }
+    h1, h2, h3 { font-weight: 700; margin-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; }
+
+    /* Hero */
+    .hero {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: var(--radius);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .hero h1 { 
+      font-size: 1.8rem; 
+      line-height: 1.3;
+    }
+    .hero p { 
+      color: #aaa; 
+      font-size: 1rem; 
+      margin-bottom: 1rem;
+    }
+
+    /* Highlight Stats & Timer */
+    .highlight-stats {
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+    .highlight-stats span { 
+      display: flex; 
+      align-items: center; 
+      gap: 0.25rem; 
+      white-space: nowrap;
+    }
+    .highlight-stats b { font-weight: 900; }
+
+    /* CTA Section */
+    .cta-section {
+      background: var(--card);
+      border: 2px solid var(--accent);
+      padding: 1rem;
+      border-radius: var(--radius);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .cta-section p { font-size: 1rem; }
+    .cta-section .price-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .cta-section .original { 
+      text-decoration: line-through; 
+      color: #777; 
+      font-size: 1.1rem; 
+    }
+    .cta-section .discount { 
+      font-size: 2.5rem; 
+      color: var(--accent); 
+      font-weight: 900; 
+    }
+    .cta-section form { 
+      display: inline-block; 
+      width: 100%;
+      max-width: 300px;
+    }
+
+    /* Badges */
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      background: var(--badge-bg);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius);
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    /* Payment Methods */
+    .payment-methods {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .payment-methods img {
+      height: 24px;
+      width: auto;
+      max-width: 50px;
+      object-fit: contain;
+      opacity: 0.9;
+      transition: opacity 0.3s;
+    }
+    .payment-methods img[alt="Visa"],
+    .payment-methods img[alt="Mastercard"],
+    .payment-methods img[alt="RuPay"] {
+      filter: brightness(0) invert(1);
+    }
+    .upi-fallback {
+      color: white;
+      font-weight: bold;
+      display: none;
+      padding: 0 8px;
+      background: #333;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    /* Preview Section */
+    .preview-section {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+    }
+    .preview-section h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    @media (min-width: 480px) {
+      .preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .preview-card {
+      background: #1a1a1a;
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border-left: 3px solid var(--accent);
+    }
+    .preview-card h4 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .preview-card p {
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    /* Info Section */
+    .info { margin-bottom: 1rem; }
+    .info h2 { 
+      text-align: center; 
+      font-size: 1.5rem; 
+      margin-bottom: 1rem;
+    }
+    .features {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .features li {
+      background: var(--card);
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* Reviews */
+    .reviews { margin-bottom: 1rem; }
+    .reviews h2 { 
+      text-align: center; 
+      font-size: 1.5rem; 
+      margin-bottom: 1rem;
+    }
+    .review-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .review {
+      background: var(--card);
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      position: relative;
+    }
+    .review::before {
+      content: '"';
+      font-size: 3rem;
+      position: absolute;
+      top: -10px;
+      left: 5px;
+      color: rgba(229, 57, 53, 0.2);
+      font-family: serif;
+      line-height: 1;
+    }
+    .review .author { 
+      display: block; 
+      margin-top: 0.5rem; 
+      font-style: italic; 
+      color: #aaa; 
+      font-size: 0.8rem;
+    }
+
+    /* Highlight */
+    .highlight {
+      background: var(--card);
+      padding: 1rem;
+      border-radius: var(--radius);
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    /* FAQ */
+    .faq { margin-bottom: 1rem; }
+    .faq h2 { 
+      text-align: center; 
+      font-size: 1.5rem; 
+      margin-bottom: 1rem;
+    }
+    .faq-item { margin-bottom: 0.5rem; }
+    .faq-question {
+      width: 100%;
+      background: var(--card);
+      color: var(--fg);
+      padding: 0.75rem;
+      border: none;
+      border-radius: var(--radius);
+      text-align: left;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.1rem;
+    }
+    .faq-question[aria-expanded="true"]::after {
+      content: '-';
+    }
+    .faq-answer {
+      background: var(--bg);
+      padding: 0.75rem;
+      border-radius: 0 0 var(--radius) var(--radius);
+      font-size: 0.85rem;
+      color: #ccc;
+      display: none;
+    }
+
+    /* Sticky Footer CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--card);
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #333;
+      z-index: 100;
+    }
+    .sticky-cta .price-wrap { 
+      display: flex; 
+      align-items: baseline; 
+      gap: 0.5rem; 
+    }
+    .sticky-cta .original { 
+      text-decoration: line-through; 
+      color: #777; 
+      font-size: 0.9rem; 
+    }
+    .sticky-cta .discount { 
+      font-size: 1.2rem; 
+      color: var(--accent); 
+      font-weight: 900; 
+    }
+    .sticky-cta form { 
+      margin: 0; 
+      width: auto;
+    }
+
+    /* Button Animation */
+    .rzp-button {
+      transition: all 0.3s ease;
+      max-width: 100%;
+    }
+    .rzp-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0.75rem;
+      }
+      
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      
+      .highlight-stats {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+        padding: 0.5rem;
+      }
+      
+      .cta-section .discount {
+        font-size: 2rem;
+      }
+      
+      .badges {
+        gap: 0.5rem;
+      }
+      
+      .badge {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+      
+      .sticky-cta {
+        padding: 0.5rem;
+      }
+      
+      .sticky-cta .discount {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Unlock 8,000+ Premium ChatGPT Prompts</h1>
+      <p>Every niche • Every use-case • Instant digital download</p>
+
+      <div class="highlight-stats">
+        <span>🔥 <b id="viewer-count">157</b> viewing now</span>
+        <span>⚡ Only <b id="stock-count">12</b> left at this price</span>
+        <span>⏰ <b id="timer">23:59</b> remaining</span>
+      </div>
+
+      <div class="cta-section">
+        <p>Get lifetime access today for just:</p>
+        <div class="price-wrap"><span class="original">₹1499</span><span class="discount">₹399</span></div>
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QfWLdT6PElY67I" async></script>
+        </form>
+      </div>
+
+      <div class="badges">
+        <div class="badge">📥 Instant Access</div>
+        <div class="badge">🔒 Secure Checkout</div>
+        <div class="badge">💯 4.9★ (10,284 reviews)</div>
+      </div>
+
+      <div class="payment-methods">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/RuPay.svg" alt="RuPay" onerror="this.style.display='none'">
+        <img src="https://i.ibb.co/9tLfR7B/upi-logo.png" alt="UPI" onerror="this.style.display='none'; document.querySelector('.upi-fallback').style.display='inline-block'">
+        <span class="upi-fallback">UPI</span>
+      </div>
+    </div>
+
+    <section class="preview-section">
+      <h3>Here's What You'll Get:</h3>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <h4>Marketing Prompts</h4>
+          <p>500+ high-converting prompts for ads, emails, and social media</p>
+        </div>
+        <div class="preview-card">
+          <h4>Content Creation</h4>
+          <p>800+ prompts for blogs, articles, and SEO content</p>
+        </div>
+        <div class="preview-card">
+          <h4>Business Growth</h4>
+          <p>300+ prompts for business strategy and development</p>
+        </div>
+        <div class="preview-card">
+          <h4>Productivity</h4>
+          <p>200+ prompts to streamline your workflow</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Why You'll Love This Bundle</h2>
+      <ul class="features">
+        <li>🚀 Instant Inspiration</li>
+        <li>📂 100+ Categories</li>
+        <li>⏳ Time Saver</li>
+        <li>📈 Boost ROI</li>
+        <li>🔄 Regular Updates</li>
+        <li>💡 Expert-Crafted</li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2>What Our Customers Say</h2>
+      <div class="review-list">
+        <div class="review"><p>"Cut my writing time in half while doubling my output. The marketing prompts alone were worth 10x the price!"</p><span class="author">— Anita, Digital Marketer</span></div>
+        <div class="review"><p>"Saw a 35% increase in conversions within days of using these prompts. Best investment I made this year."</p><span class="author">— Rajesh, E-commerce Owner</span></div>
+        <div class="review"><p>"As a blogger, the content prompts have helped me overcome writer's block and publish daily."</p><span class="author">— Priya, Lifestyle Blogger</span></div>
+        <div class="review"><p>"The business strategy prompts helped me refine my startup pitch and secure funding."</p><span class="author">— Vikram, Tech Founder</span></div>
+      </div>
+    </section>
+
+    <div class="highlight">Join 10,284+ satisfied customers who transformed their productivity!</div>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="answer1">Do I need ChatGPT Pro to use these prompts?</button>
+        <div class="faq-answer" id="answer1" role="region">No! All prompts work perfectly with both free and paid ChatGPT accounts. We've optimized them to deliver great results regardless of your plan.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="answer2">How do I access the prompts after purchase?</button>
+        <div class="faq-answer" id="answer2" role="region">Immediately after payment, you'll receive an email with download links for the PDF bundle. You'll also get access to our members area where you can download future updates.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="answer3">Are updates included with my purchase?</button>
+        <div class="faq-answer" id="answer3" role="region">Yes! All future prompt additions and updates are included at no extra cost. We add 100+ new prompts every month based on user feedback and AI advancements.</div>
+      </div>
+    </section>
+  </div>
+
+  <div class="sticky-cta">
+    <div class="price-wrap"><span class="original">₹1499</span><span class="discount">₹399</span></div>
+    <form>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QfWLdT6PElY67I" async></script>
+    </form>
+  </div>
+
+  <script>
+    // Improved Timer
+    (() => {
+      const el = document.getElementById('timer');
+      const end = Date.now() + 24*60*60*1000;
+      
+      function updateTimer() {
+        let ms = end - Date.now();
+        if (ms < 0) ms = 0;
+        
+        if (ms < 3600000) { // Last hour
+          const m = String(Math.floor(ms/60000)).padStart(2,'0');
+          const s = String(Math.floor((ms%60000)/1000)).padStart(2,'0');
+          el.textContent = `${m}:${s}`;
+          el.style.color = 'var(--accent)';
+          el.style.fontWeight = '900';
+        } else {
+          const h = String(Math.floor(ms/3600000)).padStart(2,'0');
+          const m = String(Math.floor((ms%3600000)/60000)).padStart(2,'0');
+          el.textContent = `${h}:${m}`;
+        }
+      }
+      
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    })();
+
+    // Stats simulation
+    setInterval(() => {
+      const v = document.getElementById('viewer-count');
+      const s = document.getElementById('stock-count');
+      const randomViewers = Math.floor(Math.random()*3) + 1;
+      v.textContent = +v.textContent + randomViewers;
+      if (+s.textContent > 1 && Math.random() > 0.7) {
+        s.textContent = +s.textContent - 1;
+      }
+    }, 8000);
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        const answer = document.getElementById(btn.getAttribute('aria-controls'));
+        
+        btn.setAttribute('aria-expanded', !expanded);
+        answer.style.display = expanded ? 'none' : 'block';
+      });
+    });
+
+    // Payment icons fallback check
+    document.addEventListener('DOMContentLoaded', function() {
+      const upiImg = document.querySelector('img[alt="UPI"]');
+      if (!upiImg.complete || upiImg.naturalHeight === 0) {
+        upiImg.style.display = 'none';
+        document.querySelector('.upi-fallback').style.display = 'inline-block';
+      }
+    });
+  </script>
+</body>
+</html>
