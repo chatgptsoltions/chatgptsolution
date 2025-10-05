@@ -416,14 +416,14 @@ src="https://www.facebook.com/tr?id=632005943229511&ev=PageView&noscript=1"
       <div class="highlight-stats">
         <span>🔥 <b id="viewer-count">157</b> viewing now</span>
         <span>⚡ Only <b id="stock-count">12</b> left at this price</span>
-        <span>⏰ <b id="timer">23:59</b> remaining</span>
+        <span>⏰ <b id="timer">18:00:00</b> remaining</span>
       </div>
 
       <div class="cta-section">
         <p>Get lifetime access today for just:</p>
-        <div class="price-wrap"><span class="original">₹1499</span><span class="discount">₹399</span></div>
+        <div class="price-wrap"><span class="original">₹1499</span><span class="discount">₹449</span></div>
         <form>
-          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QfWLdT6PElY67I" async></script>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RPtuExj730wPEL" async> </script>
         </form>
       </div>
 
@@ -506,17 +506,17 @@ src="https://www.facebook.com/tr?id=632005943229511&ev=PageView&noscript=1"
   </div>
 
   <div class="sticky-cta">
-    <div class="price-wrap"><span class="original">₹1499</span><span class="discount">₹399</span></div>
+    <div class="price-wrap"><span class="original">₹1499</span><span class="discount">₹449</span></div>
     <form>
-      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QfWLdT6PElY67I" async></script>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_RPtuExj730wPEL" async> </script>
     </form>
   </div>
 
   <script>
-    // Improved Timer
+    // Updated Timer - Now starts from 18 hours
     (() => {
       const el = document.getElementById('timer');
-      const end = Date.now() + 24*60*60*1000;
+      const end = Date.now() + 18*60*60*1000; // Changed from 24 to 18 hours
       
       function updateTimer() {
         let ms = end - Date.now();
@@ -531,7 +531,8 @@ src="https://www.facebook.com/tr?id=632005943229511&ev=PageView&noscript=1"
         } else {
           const h = String(Math.floor(ms/3600000)).padStart(2,'0');
           const m = String(Math.floor((ms%3600000)/60000)).padStart(2,'0');
-          el.textContent = `${h}:${m}`;
+          const s = String(Math.floor((ms%60000)/1000)).padStart(2,'0');
+          el.textContent = `${h}:${m}:${s}`;
         }
       }
       
